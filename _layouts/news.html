@@ -2,22 +2,84 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>News</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 20px;
+      background-color: #f9f9f9;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .news-item {
+      background-color: white;
+      padding: 15px 20px;
+      border-radius: 10px;
+      margin-bottom: 15px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      transition: transform 0.2s ease;
+    }
+
+    .news-item:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+    }
+
+    .news-date {
+      color: #999;
+      font-size: 0.9em;
+      margin-bottom: 5px;
+    }
+
+    .news-text {
+      font-size: 1em;
+    }
+
+    .news-text strong {
+      color: #007acc;
+    }
+  </style>
 </head>
 <body>
-  <h1>News</h1>
 
-  <p>[2025/01] My first-author paper were accepted by ACM CHI-LBW 2025!!!
+<h1>News</h1>
 
-  <p>[2025/01] My first-author paper and my co-authored paper with Wenxuan Xu were accepted by IEEE VR 2025! 🎉
+<div class="news-item">
+  <div class="news-date">[2025/01]</div>
+  <div class="news-text">🎉 <strong>First-author</strong> paper accepted to <strong>ACM CHI-LBW 2025</strong>!</div>
+</div>
 
-  <p>[2024/08] My co-authored paper with Dr.Raj was accepted by SUI 2024!</p>
-  
-  <p>[2024/07] My first-author paper was accepted by ISMAR 2024. Super excited!!!</p>
+<div class="news-item">
+  <div class="news-date">[2025/01]</div>
+  <div class="news-text">🎉 One <strong>first-author</strong> and one <strong>co-authored</strong> paper accepted to <strong>IEEE VR 2025</strong> (with Wenxuan Xu).</div>
+</div>
 
-  <p>[2024/06] My co-authored paper with Dr.RongKai was accepted by ISS 2024!</p>
+<div class="news-item">
+  <div class="news-date">[2024/08]</div>
+  <div class="news-text">My <strong>co-authored</strong> paper with Dr. Raj accepted to <strong>SUI 2024</strong>.</div>
+</div>
 
-  <p>[2024/02] The first collaborative paper I worked on was accepted by I3D 2024!</p>
+<div class="news-item">
+  <div class="news-date">[2024/07]</div>
+  <div class="news-text">🎉 <strong>First-author</strong> paper accepted to <strong>ISMAR 2024</strong>!</div>
+</div>
+
+<div class="news-item">
+  <div class="news-date">[2024/06]</div>
+  <div class="news-text"><strong>Co-authored</strong> paper with Dr. Rongkai accepted to <strong>ISS 2024</strong>.</div>
+</div>
+
+<div class="news-item">
+  <div class="news-date">[2024/02]</div>
+  <div class="news-text">My first collaborative paper accepted to <strong>I3D 2024</strong>!</div>
+</div>
+
 </body>
 </html>
