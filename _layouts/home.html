@@ -1,43 +1,50 @@
 ---
 layout: default
 ---
+
 <div class="row g-5 mb-5">
+  <!-- 左侧：Biography -->
   <div class="col-md-6">
     <h3 class="fw-bold">Biography</h3>
     {{ content }}
   </div>
+
+  <!-- 右侧：图片 + 联系方式 -->
   <div class="col-md-6">
-    <!-- 图片 -->
-    <img src="{{ site.github.url }}/assets/img/index.jpg" alt="Home" width="100%">
-    
-    <!-- 图片下方的联系信息 -->
+    <!-- 优化后的头像照片 -->
+    <div style="text-align: center;">
+      <img src="{{ site.github.url }}/assets/img/index.jpg"
+           alt="Profile Photo"
+           style="max-width: 250px; width: 80%; height: auto; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+    </div>
+
+    <!-- 联系方式 -->
     <p style="line-height: 1.8; text-align: center; margin-top: 10px;">
-        <!-- 邮件链接 -->
-        <a href="mailto:Xuning.Hu22@student.xjtlu.edu.cn">
-            <img src="{{ site.github.url }}/assets/img/gmail.png" width="20px" style="margin-bottom:-3px"> Mail
-        </a>&nbsp;&nbsp;&nbsp;&nbsp;
+      <a href="mailto:Xuning.Hu22@student.xjtlu.edu.cn">
+        <img src="{{ site.github.url }}/assets/img/gmail.png" width="20px" style="margin-bottom:-3px"> Mail
+      </a>&nbsp;&nbsp;&nbsp;&nbsp;
 
-        <!-- Google Scholar链接 -->
-        <a href="https://scholar.google.com/citations?user=WNMJNnMAAAAJ&hl=en&oi=ao" target="blank">
-            <img src="{{ site.github.url }}/assets/img/google_scholar.png" width="20px" style="margin-bottom:-3px">
-            Google Scholar
-        </a>
+      <a href="https://scholar.google.com/citations?user=WNMJNnMAAAAJ&hl=en&oi=ao" target="blank">
+        <img src="{{ site.github.url }}/assets/img/google_scholar.png" width="20px" style="margin-bottom:-3px">
+        Google Scholar
+      </a>
     </p>
-</div>
-
-</div>
-<hr>
- {% include news.html %}
-<hr>
- {% include education.html %}
-<hr>
- {% include researchexperience.html %}
-<hr>
- {% include publications.html %}
-<hr>
- {% include cv.html %}
-
-<hr>
- <div style="width: 300px; height: 300px; overflow: hidden; position: relative;">
-    <script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=AqXitqhCGAFl2AuK0hdHF5ijO0pLUl_Qoa_E9BSAX-Q"></script>
   </div>
+</div>
+
+<hr>
+{% include news.html %}
+<hr>
+{% include education.html %}
+<hr>
+{% include researchexperience.html %}
+<hr>
+{% include publications.html %}
+<hr>
+{% include cv.html %}
+<hr>
+
+<!-- 地球访问图插件 -->
+<div style="width: 300px; height: 300px; overflow: hidden; position: relative;">
+  <script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=AqXitqhCGAFl2AuK0hdHF5ijO0pLUl_Qoa_E9BSAX-Q"></script>
+</div>
