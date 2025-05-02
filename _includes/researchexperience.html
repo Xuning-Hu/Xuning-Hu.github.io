@@ -1,77 +1,121 @@
-<h2>Research Experience</h2>
-
-<table>
-    <tbody>
-        <tr>
-            <p> <a href="https://vvise.iat.sfu.ca/" target="_blank"><strong>
-                VVISE Lab | Simon Fraser University</strong></a> <span style="float: right;"><i><strong>Oct 2024 -
-                            Present</strong></i>
-            </p> <i>Research Intern, Human-Computer Interaction
-                </a></i>
-            <ul>
-                <li>Advised by Prof. <a href="https://vvise.iat.sfu.ca/people/wolfgang-stuerzlinger?_gl=1*1f27nku*_gcl_au*MjEzMDIzNjIxOS4xNzM3MzU4ODM4*_ga*MTAwMTAyODkzOS4xNzM3MzU4ODM4*_ga_R4BCVYL1QF*MTczNzM1ODgzOC4xLjEuMTczNzM1OTIwNy41OC4wLjA.">Wolfgang Stuerzlinger</a>.
-                </li>
-                <li>Conducting research on designing gaze interaction technology
-                </li>
-            </ul>
-        </tr>
-        <tr></tr>
-    </tbody>
-</table>
-
-
-<table>
-    <tbody>
-        <tr>
-            <p> <a href="https://hai-ning-liang.github.io/" target="_blank"><strong>
-               FIT-AWE Lab | The Hong Kong University of Science and Technology (Guangzhou)</strong></a> <span style="float: right;"><i><strong>Oct 2024 -
-                            Present</strong></i>
-            </p> <i>Research Intern, Human-Computer Interaction
-                </a></i>
-            <ul>
-                <li>Advised by Prof. <a href="https://cma.hkust-gz.edu.cn/people/hai-ning-liang/">Hai-Ning Liang</a>.
-                </li>
-                <li>Conducting research on designing selection technology, and user modeling.
-                </li>
-            </ul>
-        </tr>
-        <tr></tr>
-    </tbody>
-</table>
-
-    <table>
-        <tbody>
-            <tr>
-                <p>
-                    <a href="http://www.iscas.ac.cn/jgsz2016/200908/t20090827_2449379.html" target="_blank">
-                        <strong>Human-Computer Interaction Technology Lab | Institute of Software Chinese Academy of Sciences</strong></a>
-                    <span style="float: right;"><i><strong>Jan 2024 - Oct 2024</strong></i>
-                </p>
-                <i>Research Intern, Human-Computer Interaction</i>
-                <ul>
-                    <li>Advised by Prof. <a href="https://people.ucas.ac.cn/~huangjin/">Jin Huang</a>.
-                    </li>
-                    <li>Designing Technology for Selecting Moving Objects and Modeling User Behavior Patterns.</li>
-                </ul>
-                <!-- <td><br><br><br><br></td> -->
-            </tr>
-        </tbody>
-    </table>
-    <table>
-        <tbody>
-            <tr>
-                <p> <a href="https://www.researchgate.net/lab/X-CHI-Lab-Hai-Ning-Liang/" target="_blank"><strong>X-CHI Lab |
-                      Liverpool University</strong></a> <span style="float: right;"><i><strong>Dec 2022 -
-                                Present</strong></i>
-                </p> <i>Research Intern, Human-Computer Interaction
-                    </a></i>
-                <ul>
-                    <li>Advised by Prof. <a href="https://cma.hkust-gz.edu.cn/people/hai-ning-liang/">Hai-Ning Liang</a>.
-                    </li>
-                    <li>Conducting research on designing selection technology, typing input, game tutorials, and user modeling.
-                    </li>
-                </ul>
-            </tr>
-            <tr></tr>
-        </tbody>
-    </table>
+<style>
+    .research-card {
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 20px;
+      transition: all 0.3s ease;
+      background-color: #fafafa;
+    }
+    
+    .research-card:hover {
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      background-color: #f0f8ff;
+    }
+    
+    .research-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+    }
+    
+    .research-title {
+      font-weight: bold;
+      font-size: 1.1em;
+    }
+    
+    .research-subtitle {
+      font-style: italic;
+      color: #444;
+    }
+    
+    .research-details {
+      margin-top: 10px;
+      display: none;
+    }
+    
+    .research-card.active .research-details {
+      display: block;
+    }
+    </style>
+    
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      document.querySelectorAll('.research-header').forEach(header => {
+        header.addEventListener('click', () => {
+          const card = header.closest('.research-card');
+          card.classList.toggle('active');
+        });
+      });
+    });
+    </script>
+    
+    <h2>Research Experience</h2>
+    
+    <div class="research-card">
+      <div class="research-header">
+        <div class="research-title">
+          <a href="https://vvise.iat.sfu.ca/" target="_blank">VVISE Lab | Simon Fraser University</a>
+        </div>
+        <div class="research-subtitle">Oct 2024 - Present</div>
+      </div>
+      <div class="research-details">
+        <i>Research Intern, Human-Computer Interaction</i>
+        <ul>
+          <li>Advised by Prof. <a href="https://vvise.iat.sfu.ca/people/wolfgang-stuerzlinger">Wolfgang Stuerzlinger</a>.</li>
+          <li>Conducting research on designing gaze interaction technology.</li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="research-card">
+      <div class="research-header">
+        <div class="research-title">
+          <a href="https://hai-ning-liang.github.io/" target="_blank">FIT-AWE Lab | HKUST (Guangzhou)</a>
+        </div>
+        <div class="research-subtitle">Oct 2024 - Present</div>
+      </div>
+      <div class="research-details">
+        <i>Research Intern, Human-Computer Interaction</i>
+        <ul>
+          <li>Advised by Prof. <a href="https://cma.hkust-gz.edu.cn/people/hai-ning-liang/">Hai-Ning Liang</a>.</li>
+          <li>Conducting research on designing selection technology and user modeling.</li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="research-card">
+      <div class="research-header">
+        <div class="research-title">
+          <a href="http://www.iscas.ac.cn/jgsz2016/200908/t20090827_2449379.html" target="_blank">
+            Human-Computer Interaction Technology Lab | ISCAS
+          </a>
+        </div>
+        <div class="research-subtitle">Jan 2024 - Oct 2024</div>
+      </div>
+      <div class="research-details">
+        <i>Research Intern, Human-Computer Interaction</i>
+        <ul>
+          <li>Advised by Prof. <a href="https://people.ucas.ac.cn/~huangjin/">Jin Huang</a>.</li>
+          <li>Designing technology for selecting moving objects and modeling user behavior patterns.</li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="research-card">
+      <div class="research-header">
+        <div class="research-title">
+          <a href="https://www.researchgate.net/lab/X-CHI-Lab-Hai-Ning-Liang/" target="_blank">X-CHI Lab | Liverpool University</a>
+        </div>
+        <div class="research-subtitle">Dec 2022 - Present</div>
+      </div>
+      <div class="research-details">
+        <i>Research Intern, Human-Computer Interaction</i>
+        <ul>
+          <li>Advised by Prof. <a href="https://cma.hkust-gz.edu.cn/people/hai-ning-liang/">Hai-Ning Liang</a>.</li>
+          <li>Conducting research on selection techniques, typing input, game tutorials, and user modeling.</li>
+        </ul>
+      </div>
+    </div>
+    
