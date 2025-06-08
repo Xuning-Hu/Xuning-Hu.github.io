@@ -1,139 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Publications</title>
+
 <style>
-    .publication-list {
-      display: flex;
-      flex-direction: column;
-      gap: 30px;
-      padding: 20px 0;
-    }
-    
-    .publication-item {
-      display: flex;
-      flex-direction: row;
-      gap: 20px;
-      align-items: flex-start;
-      border: 1px solid #e0e0e0;
-      border-radius: 10px;
-      padding: 20px;
-      background-color: #fafafa;
-      transition: box-shadow 0.3s ease, transform 0.2s ease;
-    }
-    
-    .publication-item:hover {
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
-      transform: translateY(-4px);
-      background-color: #f0f8ff;
-    }
-    
-    .publication-item img {
-      width: 260px;
-      height: auto;
-      border-radius: 8px;
-      object-fit: cover;
-      transition: transform 0.3s ease;
-    }
-    
-    .publication-item:hover img {
-      transform: scale(1.03);
-    }
-    
-    .publication-info {
-      flex: 1;
-    }
-    
-    .publication-info b {
-      font-size: 1.2em;
-    }
-    
-    .publication-info em {
-      color: #666;
-    }
-    
-    .publication-info a {
-      margin-top: 8px;
-      display: inline-block;
-      color: #007acc;
-      text-decoration: none;
-      font-weight: bold;
-      transition: color 0.2s ease;
-    }
-    
-    .publication-info a:hover {
-      color: #005f99;
-    }
-    </style>
-    
-    <h2>Publications</h2>
-    
-    <div class="publication-list">
-    
-      <div class="publication-item">
-        <img src="{{ site.github.url }}/assets/img/VR2025Xuning.png" alt="VR2025">
-        <div class="publication-info">
-          <b>Optimizing Moving Target Selection in VR by Integrating Proximity-Based Feedback Types and Modalities</b><br><br>
-          <strong>Xuning Hu</strong>, Wenxuan Xu, Yushi Wei, Zhang Hao, Jin Huang, Hai-Ning Liang.<br>
-          <em>IEEE Conference on Virtual Reality and 3D User Interfaces (VR 2025)</em><br>
-          <a href="{{ site.github.url }}/assets/pdfs/VR2025Xuning.pdf" target="_blank">paper</a>
-        </div>
-      </div>
-    
-      <div class="publication-item">
-        <img src="{{ site.github.url }}/assets/img/ismar.png" alt="ISMAR">
-        <div class="publication-info">
-          <b>Exploring the Effects of Spatial Constraints and Curvature for 3D Piloting in Virtual Environments</b><br><br>
-          <strong>Xuning Hu</strong>, Xinan Yan, Yushi Wei, Wenxuan Xu, Yue Li, Yue Liu, Hai-Ning Liang.<br>
-          <em>IEEE International Symposium on Mixed and Augmented Reality (ISMAR 2024)</em><br>
-          <a href="{{ site.github.url }}/assets/pdfs/ISMAR2024Xuning.pdf" target="_blank">paper</a>
-        </div>
-      </div>
-    
-      <div class="publication-item">
-        <img src="{{ site.github.url }}/assets/img/CHILBW.png" alt="CHI-LBW">
-        <div class="publication-info">
-          <b>Exploring Gaze-Based Steering Behavior in Virtual Reality</b><br><br>
-          <strong>Xuning Hu</strong>, Yichuan Zhang, Yushi Wei, Yue Li, Wolfgang Stuerzlinger, Hai-Ning Liang.<br>
-          <em>ACM CHI Conference on Human Factors in Computing Systems (CHI-LBW 2025)</em>
-        </div>
-      </div>
-    
-      <div class="publication-item">
-        <img src="{{ site.github.url }}/assets/img/VR2025Wenxuan.png" alt="VR2025 Wenxuan">
-        <div class="publication-info">
-          <b>Predicting Ray Pointer Landing Poses in VR Using Multimodal LSTM-Based Neural Networks</b><br><br>
-          Wenxuan Xu, Yushi Wei, <strong>Xuning Hu</strong>, Wolfgang Stuerzlinger, Yuntao Wang, Hai-Ning Liang.<br>
-          <em>IEEE Conference on Virtual Reality and 3D User Interfaces (VR 2025)</em><br>
-          <a href="{{ site.github.url }}/assets/pdfs/VR2025Wenxuan.pdf" target="_blank">paper</a>
-        </div>
-      </div>
-    
-      <div class="publication-item">
-        <img src="{{ site.github.url }}/assets/img/PACM2024Rongkai.png" alt="PACM 2024">
-        <div class="publication-info">
-          <b>Experimental Analysis of Freehand Multi-Object Selection Techniques in Virtual Reality Head-Mounted Displays</b><br><br>
-          Rongkai Shi, Yushi Wei, <strong>Xuning Hu</strong>, Liu Yu, Yue Yong, Hai-Ning Liang.<br>
-          <em>Proceedings of the ACM on Human-Computer Interaction (PACM 2024)</em><br>
-          <a href="{{ site.github.url }}/assets/pdfs/PACM2024Rongkai.pdf" target="_blank">paper</a>
-        </div>
-      </div>
-    
-      <div class="publication-item">
-        <img src="{{ site.github.url }}/assets/img/SUI2024Raj.png" alt="SUI 2024">
-        <div class="publication-info">
-          <b>OnArmQWERTY: An Empirical Evaluation of On-Arm Tap Typing for AR HMDs</b><br><br>
-          Rajkumar Darbar, <strong>Xuning Hu</strong>, Xinan Yan, Yushi Wei, Hai-Ning Liang, Wenge Xu, Sayan Sarcar.<br>
-          <em>Proceedings of the 2024 ACM Symposium on Spatial User Interaction (SUI 2024)</em><br>
-          <a href="{{ site.github.url }}/assets/pdfs/SUI2024Raj.pdf" target="_blank">paper</a>
-        </div>
-      </div>
-    
-      <div class="publication-item">
-        <img src="{{ site.github.url }}/assets/img/Game.png" alt="I3D 2024">
-        <div class="publication-info">
-          <b>Impact of Tutorial Modes with Different Time Flow Rates in Virtual Reality Games</b><br><br>
-          Boyuan Chen, Xinan Yan, <strong>Xuning Hu</strong>, Dominic Kao, Hai-Ning Liang.<br>
-          <em>ACM SIGGRAPH Symposium on Interactive 3D Graphics and Games (I3D 2024)</em><br>
-          <a href="{{ site.github.url }}/assets/pdfs/Game.pdf" target="_blank">paper</a>
-        </div>
-      </div>
-    
+/* ===== 布局 ===== */
+.publication-list{display:flex;flex-direction:column;gap:40px;padding:20px 0}
+.publication-item{display:flex;gap:20px;align-items:flex-start;border-bottom:1px solid #ddd;padding-bottom:20px}
+.publication-item img{width:260px;border-radius:8px;object-fit:contain;box-shadow:0 2px 8px rgba(0,0,0,.1)}
+.publication-info{flex:1}
+.publication-info b{font-size:1.2em}
+.publication-info em{color:#666}
+
+/* ===== 按钮 ===== */
+.pub-btn{
+  display:inline-block;margin:8px 10px 0 0;padding:6px 18px;border-radius:20px;
+  background:#2a6fdb;color:#fff;font-size:.9em;font-weight:500;text-decoration:none;
+  box-shadow:0 2px 6px rgba(0,0,0,.08);transition:all .3s ease;line-height:1.4
+}
+.pub-btn:hover{background:#1e4d91;transform:scale(1.05);box-shadow:0 4px 12px rgba(0,0,0,.15)}
+.paper-btn::before{content:"📄 ";}
+.doi-btn  {background:#f39c12}.doi-btn::before{content:"🔗 ";}
+.video-btn{background:#e74c3c}.video-btn::before{content:"🎬 ";}
+.bib-btn  {background:#27ae60}.bib-btn::before{content:"📑 ";}
+
+/* ===== BibTeX 模态 ===== */
+.bib-modal{position:fixed;inset:0;display:none;align-items:center;justify-content:center;background:rgba(0,0,0,.45);z-index:9999}
+.bib-modal.active{display:flex}
+.bib-box{background:#fff;border-radius:10px;max-width:600px;width:90%;padding:20px;box-shadow:0 4px 20px rgba(0,0,0,.25);position:relative}
+.bib-box textarea{width:100%;height:200px;border:1px solid #ccc;border-radius:6px;padding:10px;font-family:monospace;font-size:.85em}
+.bib-close{position:absolute;top:10px;right:14px;font-size:1.2em;cursor:pointer;color:#999}
+.bib-close:hover{color:#333}
+
+/* ===== 移动端 ===== */
+@media(max-width:700px){.publication-item{flex-direction:column}.publication-item img{width:100%;max-width:360px}}
+</style>
+</head>
+<body>
+
+<h2>Publications</h2>
+
+<div class="publication-list">
+
+  <!-- 1 ─────────────────────────────────────── -->
+  <div class="publication-item">
+    <img src="{{ site.github.url }}/assets/img/VR2025Xuning.png" alt="VR 2025">
+    <div class="publication-info">
+      <b>Optimizing Moving Target Selection in VR by Integrating Proximity‑Based Feedback Types and Modalities</b><br><br>
+      <strong>Xuning Hu</strong>, Wenxuan Xu, Yushi Wei, Zhang Hao, Jin Huang, Hai‑Ning Liang. <br>
+      <em>IEEE Conference on Virtual Reality and 3D User Interfaces (VR 2025)</em><br>
+
+      <a class="pub-btn paper-btn" href="{{ site.github.url }}/assets/pdfs/VR2025Xuning.pdf" target="_blank">Paper</a>
+      <a class="pub-btn doi-btn"   href="https://doi.org/10.1109/VR59515.2025.00030" target="_blank">DOI</a>
+      <!-- <a class="pub-btn video-btn" href="https://youtu.be/your_video" target="_blank">Video</a> -->
+      <a class="pub-btn bib-btn"   href="#"
+         data-bib='@INPROCEEDINGS{10937413,
+  author={Hu, Xuning and Xu, Wenxuan and Wei, Yushi and Zhang, Hao and Huang, Jin and Liang, Hai-Ning},
+  booktitle={2025 IEEE Conference Virtual Reality and 3D User Interfaces (VR)}, 
+  title={Optimizing Moving Target Selection in VR by Integrating Proximity-Based Feedback Types and Modalities}, 
+  year={2025},
+  volume={},
+  number={},
+  pages={52-62},
+  keywords={Visualization;Three-dimensional displays;Error analysis;Entertainment industry;Virtual reality;User interfaces;User experience;Real-time systems;Haptic interfaces;Virtual Reality;Moving target selection;Multi-modal interaction and perception;Feedback Mechanism},
+  doi={10.1109/VR59515.2025.00030}}'>BibTeX</a>
     </div>
-    
+  </div>
+
+  <!-- 2 ─────────────────────────────────────── -->
+  <div class="publication-item">
+    <img src="{{ site.github.url }}/assets/img/ismar.png" alt="ISMAR 2024">
+    <div class="publication-info">
+      <b>Exploring the Effects of Spatial Constraints and Curvature for 3D Piloting in Virtual Environments</b><br><br>
+      <strong>Xuning Hu</strong>, Xinan Yan, Yushi Wei, Wenxuan Xu, Yue Li, Yue Liu, Hai‑Ning Liang. <br>
+      <em>IEEE International Symposium on Mixed &amp; Augmented Reality (ISMAR 2024)</em><br>
+
+      <a class="pub-btn paper-btn" href="{{ site.github.url }}/assets/pdfs/ISMAR2024Xuning.pdf" target="_blank">Paper</a>
+      <a class="pub-btn doi-btn"   href="https://doi.org/10.1109/ISMAR62088.2024.00065" target="_blank">DOI</a>
+      <a class="pub-btn bib-btn"   href="#"
+         data-bib='@INPROCEEDINGS{10765436,
+  author={Hu, Xuning and Yan, Xinan and Wei, Yushi and Xu, Wenxuan and Li, Yue and Liu, Yue and Liang, Hai-Ning},
+  booktitle={2024 IEEE International Symposium on Mixed and Augmented Reality (ISMAR)}, 
+  title={Exploring the Effects of Spatial Constraints and Curvature for 3D Piloting in Virtual Environments}, 
+  year={2024},
+  volume={},
+  number={},
+  pages={505-514},
+  keywords={Solid modeling;Three-dimensional displays;Virtual environments;Games;Predictive models;Aircraft navigation;Trajectory;Complexity theory;Aircraft;Aerospace control;Virtual Reality;Game Controller;Steering Law;Graphical User Interfaces;Modeling;Navigation},
+  doi={10.1109/ISMAR62088.2024.00065}}'>BibTeX</a>
+    </div>
+  </div>
+
+  <!-- 3 ─────────────────────────────────────── -->
+  <div class="publication-item">
+    <img src="{{ site.github.url }}/assets/img/CHILBW.png" alt="CHI LBW 2025">
+    <div class="publication-info">
+      <b>Exploring Gaze‑Based Steering Behavior in Virtual Reality</b><br><br>
+      <strong>Xuning Hu</strong>, Yichuan Zhang, Yushi Wei, Yue Li, Wolfgang Stuerzlinger, Hai‑Ning Liang. <br>
+      <em>ACM CHI Conference on Human Factors in Computing Systems (LBW 2025)</em><br>
+
+      <a class="pub-btn paper-btn" href="{{ site.github.url }}/assets/pdfs/CHILbw.pdf" target="_blank">Paper</a>
+      <a class="pub-btn doi-btn"   href="https://dl.acm.org/doi/10.1145/3706599.3720273" target="_blank">DOI</a>
+      <a class="pub-btn bib-btn"   href="#"
+         data-bib='@INPROCEEDINGS{10765436,
+  author={Hu, Xuning and Yan, Xinan and Wei, Yushi and Xu, Wenxuan and Li, Yue and Liu, Yue and Liang, Hai-Ning},
+  booktitle={2024 IEEE International Symposium on Mixed and Augmented Reality (ISMAR)}, 
+  title={Exploring the Effects of Spatial Constraints and Curvature for 3D Piloting in Virtual Environments}, 
+  year={2024},
+  volume={},
+  number={},
+  pages={505-514},
+  keywords={Solid modeling;Three-dimensional displays;Virtual environments;Games;Predictive models;Aircraft navigation;Trajectory;Complexity theory;Aircraft;Aerospace control;Virtual Reality;Game Controller;Steering Law;Graphical User Interfaces;Modeling;Navigation},
+  doi={10.1109/ISMAR62088.2024.00065}}
+'>BibTeX</a>
+    </div>
+  </div>
+
+  <!-- 4 ─────────────────────────────────────── -->
+  <div class="publication-item">
+    <img src="{{ site.github.url }}/assets/img/VR2025Wenxuan.png" alt="VR 2025 (Second Paper)">
+    <div class="publication-info">
+      <b>Predicting Ray Pointer Landing Poses in VR Using Multimodal LSTM‑Based Neural Networks</b><br><br>
+      Wenxuan Xu, Yushi Wei, <strong>Xuning Hu</strong>, Wolfgang Stuerzlinger, Yuntao Wang, Hai‑Ning Liang. <br>
+      <em>IEEE Conference on Virtual Reality and 3D User Interfaces (VR 2025)</em><br>
+
+      <a class="pub-btn paper-btn" href="{{ site.github.url }}/assets/pdfs/VR2025Wenxuan.pdf" target="_blank">Paper</a>
+      <a class="pub-btn doi-btn" href="https://ieeexplore.ieee.org/abstract/document/10937427" target="_blank">DOI</a>
+      <a class="pub-btn bib-btn" href="#"
+         data-bib='@INPROCEEDINGS{10937427,
+  author={Xu, Wenxuan and Wei, Yushi and Hu, Xuning and Stuerzlinger, Wolfgang and Wang, Yuntao and Liang, Hai-Ning},
+  booktitle={2025 IEEE Conference Virtual Reality and 3D User Interfaces (VR)}, 
+  title={Predicting Ray Pointer Landing Poses in VR Using Multimodal LSTM-Based Neural Networks}, 
+  year={2025},
+  volume={},
+  number={},
+  pages={93-103},
+  keywords={Training;Solid modeling;Neural networks;Kinematics;Virtual reality;Resists;Predictive models;User interfaces;Data models;Testing;Index Terms: Virtual Reality;Pointing Selection;Modeling;Neural Networks},
+  doi={10.1109/VR59515.2025.00034}}'>BibTeX</a>
+    </div>
+  </div>
+
+  <!-- 5 ─────────────────────────────────────── -->
+  <div class="publication-item">
+    <img src="{{ site.github.url }}/assets/img/PACM2024Rongkai.png" alt="PACM 2024">
+    <div class="publication-info">
+      <b>Experimental Analysis of Freehand Multi‑Object Selection Techniques in VR HMDs</b><br><br>
+      Rongkai Shi, Yushi Wei, <strong>Xuning Hu</strong>, Liu Yu, Yue Yong, Hai‑Ning Liang. <br>
+      <em>Proceedings of the ACM on Human‑Computer Interaction (PACM 2024)</em><br>
+
+      <a class="pub-btn paper-btn" href="{{ site.github.url }}/assets/pdfs/PACM2024Rongkai.pdf" target="_blank">Paper</a>
+      <a class="pub-btn doi-btn" href="https://ieeexplore.ieee.org/abstract/document/10937427" target="_blank">DOI</a>
+      <a class="pub-btn bib-btn" href="#"
+         data-bib='@article{10.1145/3698129,
+author = {Shi, Rongkai and Wei, Yushi and Hu, Xuning and Liu, Yu and Yue, Yong and Yu, Lingyun and Liang, Hai-Ning},
+title = {Experimental Analysis of Freehand Multi-object Selection Techniques in Virtual Reality Head-Mounted Displays},
+year = {2024},
+issue_date = {December 2024},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {8},
+number = {ISS},
+url = {https://doi.org/10.1145/3698129},
+doi = {10.1145/3698129},
+abstract = {Object selection is essential in virtual reality (VR) head-mounted displays (HMDs). Prior work mainly focuses on enhancing and evaluating techniques for selecting a single object in VR, leaving a gap in the techniques for multi-object selection, a more complex but common selection scenario. To enable multi-object selection, the interaction technique should support group selection in addition to the default pointing selection mode for acquiring a single target. This composite interaction could be particularly challenging when using freehand gestural input. In this work, we present an empirical comparison of six freehand techniques, which are comprised of three mode-switching gestures (Finger Segment, Multi-Finger, and Wrist Orientation) and two group selection techniques (Cone-casting Selection and Crossing Selection) derived from prior work. Our results demonstrate the performance, user experience, and preference of each technique. The findings derive three design implications that can guide the design of freehand techniques for multi-object selection in VR HMDs.},
+journal = {Proc. ACM Hum.-Comput. Interact.},
+month = oct,
+articleno = {529},
+numpages = {19},
+keywords = {Freehand Interaction, Gestural Input, Head-Mounted Display, Mid-Air Interaction, Multi-object Selection, Object Selection, Target Acquisition, Virtual Reality}
+}'>BibTeX</a>
+    </div>
+  </div>
+
+  <!-- 6 ─────────────────────────────────────── -->
+  <div class="publication-item">
+    <img src="{{ site.github.url }}/assets/img/SUI2024Raj.png" alt="SUI 2024">
+    <div class="publication-info">
+      <b>OnArmQWERTY: An Empirical Evaluation of On‑Arm Tap Typing for AR HMDs</b><br><br>
+      Rajkumar Darbar, <strong>Xuning Hu</strong>, Xinan Yan, Yushi Wei, Hai‑Ning Liang, Wenge Xu, Sayan Sarcar. <br>
+      <em>ACM Symposium on Spatial User Interaction (SUI 2024)</em><br>
+
+      <a class="pub-btn paper-btn" href="{{ site.github.url }}/assets/pdfs/SUI2024Raj.pdf" target="_blank">Paper</a>
+      <a class="pub-btn doi-btn" href="https://dl.acm.org/doi/abs/10.1145/3677386.3682084" target="_blank">DOI</a>
+      <a class="pub-btn bib-btn" href="#"
+         data-bib='@inproceedings{10.1145/3677386.3682084,
+author = {Darbar, Rajkumar and Hu, Xuning and Yan, Xinan and Wei, Yushi and Liang, Hai-Ning and Xu, Wenge and Sarcar, Sayan},
+title = {OnArmQWERTY: An Empirical Evaluation of On-Arm Tap Typing for AR HMDs},
+year = {2024},
+isbn = {9798400710889},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3677386.3682084},
+doi = {10.1145/3677386.3682084},
+abstract = {Text entry is an essential and frequent task in Augmented Reality (AR) applications, yet developing an effective and user-friendly method remains a challenge. This paper introduces OnArmQWERTY, a text entry technique for AR HMDs that allows users to project a virtual QWERTY keyboard onto various locations on their non-dominant hand, including the palm, the back of the hand, and both the anterior and posterior sides of the forearm. Users interact with this overlaid keyboard on their skin by tapping with the index finger of the dominant hand, benefiting from the inherent self-haptic feedback of on-body interaction. A user study involving 13 participants evaluated the performance of OnArmQWERTY compared to a traditional mid-air virtual keyboard. The results demonstrate that OnArmQWERTY significantly improves typing speed and accuracy. Specifically, typing on the palm location outperforms all other on-arm locations, achieving a mean typing speed of 20.18 WPM and a mean error rate of 0.71\%, which underscores the importance of comfortable, ergonomic typing postures and effective tactile feedback as key factors enhancing text entry performance.},
+booktitle = {Proceedings of the 2024 ACM Symposium on Spatial User Interaction},
+articleno = {11},
+numpages = {12},
+keywords = {Augmented Reality (AR), Head-Mounted Displays (HMDs), Input Interaction., On-Body User Interface (UI), Text Input, Virtual Keyboard, Virtual Reality (VR)},
+location = {Trier, Germany},
+series = {SUI 24}
+}'>BibTeX</a>
+    </div>
+  </div>
+
+  <!-- 7 ─────────────────────────────────────── -->
+  <div class="publication-item">
+    <img src="{{ site.github.url }}/assets/img/Game.png" alt="I3D 2024">
+    <div class="publication-info">
+      <b>Impact of Tutorial Modes with Different Time Flow Rates in Virtual Reality Games</b><br><br>
+      Boyuan Chen, Xinan Yan, <strong>Xuning Hu</strong>, Dominic Kao, Hai‑Ning Liang. <br>
+      <em>ACM SIGGRAPH Symposium on Interactive 3D Graphics and Games (I3D 2024)</em><br>
+
+      <a class="pub-btn paper-btn" href="{{ site.github.url }}/assets/pdfs/Game.pdf" target="_blank">Paper</a>
+      <a class="pub-btn doi-btn" href="https://dl.acm.org/doi/10.1145/3651296" target="_blank">DOI</a>
+      <a class="pub-btn bib-btn" href="#"
+         data-bib='@article{10.1145/3651296,
+author = {Chen, Boyuan and Yan, Xinan and Hu, Xuning and Kao, Dominic and Liang, Hai-Ning},
+title = {Impact of Tutorial Modes with Different Time Flow Rates in Virtual Reality Games},
+year = {2024},
+issue_date = {May 2024},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {7},
+number = {1},
+url = {https://doi.org/10.1145/3651296},
+doi = {10.1145/3651296},
+abstract = {Virtual reality s (VR) unique affordances compared to traditional media have produced innovative interaction modes and tutorial methodologies in VR games. Existing research predominantly focuses on the performance of VR tutorial modes, such as the placement of text and diagrams within tutorial content. However, few studies have delved into other attributes of tutorials. This study categorizes 4 VR game tutorial modes based on time flow: (1) traditional instruction screen, (2) slow motion, (3) bullet time, and (4) context-sensitive mode. This paper evaluates the impact of these 4 VR game tutorial modes with varying time flow rates on controls learnability, engagement-related outcomes, and player performance. We conducted a between-subjects experiment with 59 participants. Results indicated that bullet time significantly enhanced controls learnability, reduced cognitive load, and improved player performance when compared to other tutorial modes. Our research contributes to a more comprehensive understanding of VR game tutorials and offers practical guidance for game designers, underscoring the potential of bullet time to enhance learnability and game experience.},
+journal = {Proc. ACM Comput. Graph. Interact. Tech.},
+month = may,
+articleno = {6},
+numpages = {19},
+keywords = {Game Tutorial, Games, User Study, Virtual Reality}
+}'>BibTeX</a>
+    </div>
+  </div>
+
+</div>
+
+
+<!-- ===== BibTeX 模态 ===== -->
+<div id="bibModal" class="bib-modal">
+  <div class="bib-box">
+    <span class="bib-close" onclick="closeBib()">✖</span>
+    <h3 style="margin-top:0">BibTeX</h3>
+    <textarea id="bibContent" readonly></textarea>
+  </div>
+</div>
+
+<script>
+function openBib(bib){document.getElementById('bibContent').value=bib;document.getElementById('bibModal').classList.add('active')}
+function closeBib(){document.getElementById('bibModal').classList.remove('active')}
+document.querySelectorAll('.bib-btn').forEach(btn=>{
+  btn.addEventListener('click',e=>{
+    e.preventDefault();
+    openBib(btn.getAttribute('data-bib')||'');
+  });
+});
+</script>
+</body>
+</html>

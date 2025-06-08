@@ -1,121 +1,118 @@
-<style>
-    .publication-list {
-      display: flex;
-      flex-direction: column;
-      gap: 40px;
-      padding: 20px 0;
-    }
-    
-    .publication-item {
-      display: flex;
-      flex-direction: row;
-      gap: 20px;
-      align-items: flex-start;
-      border-bottom: 1px solid #ddd;
-      padding-bottom: 20px;
-    }
-    
-    .publication-item img {
-      width: 260px;
-      height: auto;
-      border-radius: 8px;
-      object-fit: contain;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    }
-    
-    .publication-info {
-      flex: 1;
-    }
-    
-    .publication-info b {
-      font-size: 1.2em;
-    }
-    
-    .publication-info em {
-      color: #666;
-    }
-    
-    .publication-info a {
-      margin-top: 8px;
-      display: inline-block;
-      color: #007acc;
-      text-decoration: none;
-    }
-    </style>
-    
-    <h2>Publications</h2>
-    
-    <div class="publication-list">
-    
-      <div class="publication-item">
-        <img src="{{ site.github.url }}/assets/img/VR2025Xuning.png" alt="VR2025">
-        <div class="publication-info">
-          <b>Optimizing Moving Target Selection in VR by Integrating Proximity-Based Feedback Types and Modalities</b><br><br>
-          <strong>Xuning Hu</strong>, Wenxuan Xu, Yushi Wei, Zhang Hao, Jin Huang, Hai-Ning Liang. <br>
-          <em>IEEE Conference on Virtual Reality and 3D User Interfaces (VR 2025)</em><br>
-          <a href="{{ site.github.url }}/assets/pdfs/VR2025Xuning.pdf" target="_blank">paper</a>
-        </div>
-      </div>
-    
-      <div class="publication-item">
-        <img src="{{ site.github.url }}/assets/img/ismar.png" alt="ISMAR">
-        <div class="publication-info">
-          <b>Exploring the Effects of Spatial Constraints and Curvature for 3D Piloting in Virtual Environments</b><br><br>
-          <strong>Xuning Hu</strong>, Xinan Yan, Yushi Wei, Wenxuan Xu, Yue Li, Yue Liu, Hai-Ning Liang. <br>
-          <em>IEEE International Symposium on Mixed and Augmented Reality (ISMAR 2024)</em><br>
-          <a href="{{ site.github.url }}/assets/pdfs/ISMAR2024Xuning.pdf" target="_blank">paper</a>
-        </div>
-      </div>
-    
-      <div class="publication-item">
-        <img src="{{ site.github.url }}/assets/img/CHILBW.png" alt="CHI-LBW">
-        <div class="publication-info">
-          <b>Exploring Gaze-Based Steering Behavior in Virtual Reality</b><br><br>
-          <strong>Xuning Hu</strong>, Yichuan Zhang, Yushi Wei, Yue Li, Wolfgang Stuerzlinger, Hai-Ning Liang. <br>
-          <em>ACM CHI Conference on Human Factors in Computing Systems (CHI-LBW 2025)</em><br>
-          <!-- No PDF link provided -->
-        </div>
-      </div>
-    
-      <div class="publication-item">
-        <img src="{{ site.github.url }}/assets/img/VR2025Wenxuan.png" alt="VR2025">
-        <div class="publication-info">
-          <b>Predicting Ray Pointer Landing Poses in VR Using Multimodal LSTM-Based Neural Networks</b><br><br>
-          Wenxuan Xu, Yushi Wei, <strong>Xuning Hu</strong>, Wolfgang Stuerzlinger, Yuntao Wang, Hai-Ning Liang. <br>
-          <em>IEEE Conference on Virtual Reality and 3D User Interfaces (VR 2025)</em><br>
-          <a href="{{ site.github.url }}/assets/pdfs/VR2025Wenxuan.pdf" target="_blank">paper</a>
-        </div>
-      </div>
-    
-      <div class="publication-item">
-        <img src="{{ site.github.url }}/assets/img/PACM2024Rongkai.png" alt="PACM 2024">
-        <div class="publication-info">
-          <b>Experimental Analysis of Freehand Multi-Object Selection Techniques in Virtual Reality Head-Mounted Displays</b><br><br>
-          Rongkai Shi, Yushi Wei, <strong>Xuning Hu</strong>, Liu Yu, Yue Yong, Hai-Ning Liang. <br>
-          <em>Proceedings of the ACM on Human-Computer Interaction (PACM 2024)</em><br>
-          <a href="{{ site.github.url }}/assets/pdfs/PACM2024Rongkai.pdf" target="_blank">paper</a>
-        </div>
-      </div>
-    
-      <div class="publication-item">
-        <img src="{{ site.github.url }}/assets/img/SUI2024Raj.png" alt="SUI 2024">
-        <div class="publication-info">
-          <b>OnArmQWERTY: An Empirical Evaluation of On-Arm Tap Typing for AR HMDs</b><br><br>
-          Rajkumar Darbar, <strong>Xuning Hu</strong>, Xinan Yan, Yushi Wei, Hai-Ning Liang, Wenge Xu, Sayan Sarcar. <br>
-          <em>Proceedings of the 2024 ACM Symposium on Spatial User Interaction (SUI 2024)</em><br>
-          <a href="{{ site.github.url }}/assets/pdfs/SUI2024Raj.pdf" target="_blank">paper</a>
-        </div>
-      </div>
-    
-      <div class="publication-item">
-        <img src="{{ site.github.url }}/assets/img/Game.png" alt="I3D 2024">
-        <div class="publication-info">
-          <b>Impact of Tutorial Modes with Different Time Flow Rates in Virtual Reality Games</b><br><br>
-          Boyuan Chen, Xinan Yan, <strong>Xuning Hu</strong>, Dominic Kao, Hai-Ning Liang. <br>
-          <em>ACM SIGGRAPH Symposium on Interactive 3D Graphics and Games (I3D 2024)</em><br>
-          <a href="{{ site.github.url }}/assets/pdfs/Game.pdf" target="_blank">paper</a>
-        </div>
-      </div>
-    
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Publications</title>
+
+  <!-- ★★ 你也可以把这段样式搬到 /assets/css/custom.css 再 <link> 引入 ★★ -->
+  <style>
+  /* ---------- 列表与条目布局 ---------- */
+  .publication-list{
+    display:flex;
+    flex-direction:column;
+    gap:40px;
+    padding:20px 0;
+  }
+  .publication-item{
+    display:flex;
+    gap:20px;
+    align-items:flex-start;
+    border-bottom:1px solid #ddd;
+    padding-bottom:20px;
+  }
+  .publication-item img{
+    width:260px;
+    border-radius:8px;
+    object-fit:contain;
+    box-shadow:0 2px 8px rgba(0,0,0,.1);
+  }
+
+  /* ---------- 文本部分 ---------- */
+  .publication-info{flex:1;}
+  .publication-info b{font-size:1.2em;}
+  .publication-info em{color:#666;}
+
+  /* ---------- Paper 按钮 ---------- */
+  .paper-btn{
+    display:inline-block!important;
+    margin-top:10px!important;
+    padding:6px 18px!important;
+    border-radius:20px!important;
+    background:#2a6fdb!important;
+    color:#fff!important;
+    font-weight:500!important;
+    font-size:.95em!important;
+    text-decoration:none!important;
+    box-shadow:0 2px 6px rgba(0,0,0,.08)!important;
+    transition:all .3s ease!important;
+    line-height:1.4!important;
+  }
+  .paper-btn::before{content:"📄 ";}
+  .paper-btn:hover{
+    background:#1e4d91!important;
+    transform:scale(1.05)!important;
+    box-shadow:0 4px 12px rgba(0,0,0,.15)!important;
+  }
+
+  /* ---------- 响应式：小屏左右改上下 ---------- */
+  @media(max-width:700px){
+    .publication-item{flex-direction:column;}
+    .publication-item img{width:100%;max-width:360px;}
+  }
+  </style>
+</head>
+<body>
+
+<h2>Publications</h2>
+
+<div class="publication-list">
+
+  <!-- ══════════════ 1 ══════════════ -->
+  <div class="publication-item">
+    <img src="{{ site.github.url }}/assets/img/VR2025Xuning.png" alt="VR2025">
+    <div class="publication-info">
+      <b>Optimizing Moving Target Selection in VR by Integrating Proximity‑Based Feedback Types and Modalities</b><br><br>
+      <strong>Xuning Hu</strong>, Wenxuan Xu, Yushi Wei, Zhang Hao, Jin Huang, Hai‑Ning Liang.<br>
+      <em>IEEE Conference on Virtual Reality and 3D User Interfaces (VR 2025)</em><br>
+      <a class="paper-btn" href="{{ site.github.url }}/assets/pdfs/VR2025Xuning.pdf" target="_blank">Paper</a>
     </div>
-    
+  </div>
+
+  <!-- ══════════════ 2 ══════════════ -->
+  <div class="publication-item">
+    <img src="{{ site.github.url }}/assets/img/ismar.png" alt="ISMAR">
+    <div class="publication-info">
+      <b>Exploring the Effects of Spatial Constraints and Curvature for 3D Piloting in Virtual Environments</b><br><br>
+      <strong>Xuning Hu</strong>, Xinan Yan, Yushi Wei, Wenxuan Xu, Yue Li, Yue Liu, Hai‑Ning Liang.<br>
+      <em>IEEE International Symposium on Mixed and Augmented Reality (ISMAR 2024)</em><br>
+      <a class="paper-btn" href="{{ site.github.url }}/assets/pdfs/ISMAR2024Xuning.pdf" target="_blank">Paper</a>
+    </div>
+  </div>
+
+  <!-- ══════════════ 3 ══════════════ -->
+  <div class="publication-item">
+    <img src="{{ site.github.url }}/assets/img/CHILBW.png" alt="CHI‑LBW">
+    <div class="publication-info">
+      <b>Exploring Gaze‑Based Steering Behavior in Virtual Reality</b><br><br>
+      <strong>Xuning Hu</strong>, Yichuan Zhang, Yushi Wei, Yue Li, Wolfgang Stuerzlinger, Hai‑Ning Liang.<br>
+      <em>ACM CHI Conference on Human Factors in Computing Systems (CHI‑LBW 2025)</em>
+      <!-- 如果暂时没有 PDF 链接就不放按钮 -->
+    </div>
+  </div>
+
+  <!-- ══════════════ 4 ══════════════ -->
+  <div class="publication-item">
+    <img src="{{ site.github.url }}/assets/img/VR2025Wenxuan.png" alt="VR2025">
+    <div class="publication-info">
+      <b>Predicting Ray Pointer Landing Poses in VR Using Multimodal LSTM‑Based Neural Networks</b><br><br>
+      Wenxuan Xu, Yushi Wei, <strong>Xuning Hu</strong>, Wolfgang Stuerzlinger, Yuntao Wang, Hai‑Ning Liang.<br>
+      <em>IEEE VR 2025</em><br>
+      <a class="paper-btn" href="{{ site.github.url }}/assets/pdfs/VR2025Wenxuan.pdf" target="_blank">Paper</a>
+    </div>
+  </div>
+
+  <!-- 其余条目照搬结构即可 -->
+</div>
+
+</body>
+</html>

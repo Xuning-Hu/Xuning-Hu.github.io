@@ -1,121 +1,144 @@
 <style>
-    .research-card {
-      border: 1px solid #ddd;
-      border-radius: 10px;
-      padding: 20px;
-      margin-bottom: 20px;
-      transition: all 0.3s ease;
-      background-color: #fafafa;
-    }
-    
-    .research-card:hover {
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-      background-color: #f0f8ff;
-    }
-    
-    .research-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      cursor: pointer;
-    }
-    
-    .research-title {
-      font-weight: bold;
-      font-size: 1.1em;
-    }
-    
-    .research-subtitle {
-      font-style: italic;
-      color: #444;
-    }
-    
-    .research-details {
-      margin-top: 10px;
-      display: none;
-    }
-    
-    .research-card.active .research-details {
-      display: block;
-    }
-    </style>
-    
-    <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      document.querySelectorAll('.research-header').forEach(header => {
-        header.addEventListener('click', () => {
-          const card = header.closest('.research-card');
-          card.classList.toggle('active');
-        });
-      });
-    });
-    </script>
-    
-    <h2>Research Experience</h2>
-    
+.research-experience {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  border-left: 3px solid #2a6fdb; /* 蓝色竖线 */
+  padding-left: 20px;
+  margin-top: 20px;
+}
+
+.research-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+  transition: all 0.3s ease;
+  border-radius: 8px;
+  padding: 8px;
+}
+
+.research-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  background-color: #f8faff;
+}
+
+.research-logo img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: contain;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 6px;
+}
+
+.research-info h3 {
+  margin: 0;
+  font-size: 1.2em;
+  font-weight: 700;
+  color: #1e4d91; /* 深蓝标题 */
+}
+
+.research-info h3 a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.research-info .period {
+  font-style: italic;
+  color: #444;
+  margin-bottom: 8px;
+}
+
+.research-info i {
+  display: block;
+  font-style: normal;
+  color: #2a6fdb; /* 蓝色角色标题 */
+  font-weight: 500;
+  margin-bottom: 6px;
+}
+
+.research-info ul {
+  margin: 0;
+  padding-left: 20px;
+  color: #333;
+}
+
+.research-info ul li {
+  margin-bottom: 4px;
+}
+</style>
+
+
+</head>
+<body>
+
+  <h2>Research Experience</h2>
+
+  <div class="research-experience">
+
     <div class="research-card">
-      <div class="research-header">
-        <div class="research-title">
-          <a href="https://vvise.iat.sfu.ca/" target="_blank">VVISE Lab | Simon Fraser University</a>
-        </div>
-        <div class="research-subtitle">Oct 2024 - Present</div>
+      <div class="research-logo">
+        <img src="{{ site.github.url }}/assets/img/SFULogo.png" alt="SFU">
       </div>
-      <div class="research-details">
+      <div class="research-info">
+        <h3><a href="https://vvise.iat.sfu.ca/" target="_blank">VVISE Lab | Simon Fraser University</a></h3>
+        <div class="period">Oct 2024 – Present</div>
         <i>Research Intern, Human-Computer Interaction</i>
         <ul>
-          <li>Advised by Prof. <a href="https://vvise.iat.sfu.ca/people/wolfgang-stuerzlinger">Wolfgang Stuerzlinger</a>.</li>
-          <li>Conducting research on designing gaze interaction technology.</li>
+          <li>Advisor: <a href="https://vvise.iat.sfu.ca/people/wolfgang-stuerzlinger">Prof. Wolfgang Stuerzlinger</a></li>
+          <li>Designing gaze-based interaction techniques in virtual environments.</li>
         </ul>
       </div>
     </div>
-    
+
     <div class="research-card">
-      <div class="research-header">
-        <div class="research-title">
-          <a href="https://hai-ning-liang.github.io/" target="_blank">FIT-AWE Lab | HKUST (Guangzhou)</a>
-        </div>
-        <div class="research-subtitle">Oct 2024 - Present</div>
+      <div class="research-logo">
+        <img src="{{ site.github.url }}/assets/img/HKUSTGZ.png" alt="HKUST-GZ">
       </div>
-      <div class="research-details">
+      <div class="research-info">
+        <h3><a href="https://hai-ning-liang.github.io/" target="_blank">FIT-AWE Lab | HKUST (Guangzhou)</a></h3>
+        <div class="period">Oct 2024 – Present</div>
         <i>Research Intern, Human-Computer Interaction</i>
         <ul>
-          <li>Advised by Prof. <a href="https://cma.hkust-gz.edu.cn/people/hai-ning-liang/">Hai-Ning Liang</a>.</li>
-          <li>Conducting research on designing selection technology and user modeling.</li>
+          <li>Advisor: <a href="https://cma.hkust-gz.edu.cn/people/hai-ning-liang/">Prof. Hai-Ning Liang</a></li>
+          <li>Working on user modeling and VR/AR selection techniques.</li>
         </ul>
       </div>
     </div>
-    
+
     <div class="research-card">
-      <div class="research-header">
-        <div class="research-title">
-          <a href="http://www.iscas.ac.cn/jgsz2016/200908/t20090827_2449379.html" target="_blank">
-            Human-Computer Interaction Technology Lab | ISCAS
-          </a>
-        </div>
-        <div class="research-subtitle">Jan 2024 - Oct 2024</div>
+      <div class="research-logo">
+        <img src="{{ site.github.url }}/assets/img/CSCASLogo.png" alt="ISCAS">
       </div>
-      <div class="research-details">
+      <div class="research-info">
+        <h3><a href="http://www.iscas.ac.cn/" target="_blank">HCI Tech Lab | ISCAS</a></h3>
+        <div class="period">Jan 2024 – Oct 2024</div>
         <i>Research Intern, Human-Computer Interaction</i>
         <ul>
-          <li>Advised by Prof. <a href="https://people.ucas.ac.cn/~huangjin/">Jin Huang</a>.</li>
-          <li>Designing technology for selecting moving objects and modeling user behavior patterns.</li>
+          <li>Advisor: <a href="https://people.ucas.ac.cn/~huangjin/">Prof. Jin Huang</a></li>
+          <li>Designing technology for selecting moving objects and modeling user behavior.</li>
         </ul>
       </div>
     </div>
-    
+
     <div class="research-card">
-      <div class="research-header">
-        <div class="research-title">
-          <a href="https://www.researchgate.net/lab/X-CHI-Lab-Hai-Ning-Liang/" target="_blank">X-CHI Lab | Liverpool University</a>
-        </div>
-        <div class="research-subtitle">Dec 2022 - Present</div>
+      <div class="research-logo">
+        <img src="{{ site.github.url }}/assets/img/XJTLULogo.png" alt="Liverpool">
       </div>
-      <div class="research-details">
+      <div class="research-info">
+        <h3><a href="https://www.researchgate.net/lab/X-CHI-Lab-Hai-Ning-Liang/" target="_blank">X-CHI Lab | University of Liverpool</a></h3>
+        <div class="period">Dec 2022 – Present</div>
         <i>Research Intern, Human-Computer Interaction</i>
         <ul>
-          <li>Advised by Prof. <a href="https://cma.hkust-gz.edu.cn/people/hai-ning-liang/">Hai-Ning Liang</a>.</li>
+          <li>Advisor: <a href="https://cma.hkust-gz.edu.cn/people/hai-ning-liang/">Prof. Hai-Ning Liang</a></li>
           <li>Conducting research on selection techniques, typing input, game tutorials, and user modeling.</li>
         </ul>
       </div>
     </div>
-    
+
+  </div>
+
+</body>
+</html>
