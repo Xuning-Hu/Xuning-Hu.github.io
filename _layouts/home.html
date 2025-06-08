@@ -2,23 +2,21 @@
 layout: default
 ---
 
-<div class="row g-5 mb-5">
+<div class="row g-3 mb-5">
   <!-- 左侧：Biography -->
-  <div class="col-md-6">
+  <div class="col-md-7">
     <h3 class="fw-bold">Biography</h3>
     {{ content }}
   </div>
 
   <!-- 右侧：图片 + 联系方式 -->
-  <div class="col-md-6">
-    <!-- 优化后的头像照片 -->
+  <div class="col-md-5">
     <div style="text-align: center;">
       <img src="{{ site.github.url }}/assets/img/index.jpg"
            alt="Profile Photo"
-           style="max-width: 250px; width: 80%; height: auto; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+           style="max-width: 220px; width: 80%; height: auto; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
     </div>
 
-    <!-- 联系方式 -->
     <p style="line-height: 1.8; text-align: center; margin-top: 10px;">
       <a href="mailto:Xuning.Hu22@student.xjtlu.edu.cn">
         <img src="{{ site.github.url }}/assets/img/gmail.png" width="20px" style="margin-bottom:-3px"> Mail
@@ -31,6 +29,7 @@ layout: default
     </p>
   </div>
 </div>
+
 
 
 
