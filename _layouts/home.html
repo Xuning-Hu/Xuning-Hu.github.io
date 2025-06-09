@@ -3,39 +3,33 @@ layout: default
 ---
 
 <div class="row g-3 mb-5">
-  <!-- 左侧：Biography -->
-  <div class="col-md-7">
+  <!-- 左侧：Biography –– col-md-8 / col-lg-9 -->
+  <div class="col-md-8 col-lg-9">
     <h3 class="fw-bold">Biography</h3>
     {{ content }}
   </div>
 
-  <!-- 右侧：图片 + 联系方式 -->
-  <div class="col-md-5">
-    <div style="text-align: center;">
+  <!-- 右侧：头像 + 联系方式 –– col-md-4 / col-lg-3 -->
+  <div class="col-md-4 col-lg-3">
+    <div class="text-center">
       <img src="{{ site.github.url }}/assets/img/index.jpg"
            alt="Profile Photo"
-           style="max-width: 220px; width: 80%; height: auto; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+           style="max-width:220px;width:80%;height:auto;border-radius:10px;box-shadow:0 2px 8px rgba(0,0,0,0.1);" />
     </div>
 
-    <p style="line-height: 1.8; text-align: center; margin-top: 10px;">
+    <p class="mt-3 text-center" style="line-height:1.8;">
       <a href="mailto:Xuning.Hu22@student.xjtlu.edu.cn">
-        <img src="{{ site.github.url }}/assets/img/gmail.png" width="20px" style="margin-bottom:-3px"> Mail
+        <img src="{{ site.github.url }}/assets/img/gmail.png" width="20" style="margin-bottom:-3px"> Mail
       </a>&nbsp;&nbsp;&nbsp;&nbsp;
-
-      <a href="https://scholar.google.com/citations?user=WNMJNnMAAAAJ&hl=en&oi=ao" target="blank">
-        <img src="{{ site.github.url }}/assets/img/google_scholar.png" width="20px" style="margin-bottom:-3px">
+      <a href="https://scholar.google.com/citations?user=WNMJNnMAAAAJ&hl=en&oi=ao" target="_blank">
+        <img src="{{ site.github.url }}/assets/img/google_scholar.png" width="20" style="margin-bottom:-3px">
         Google Scholar
       </a>
     </p>
   </div>
 </div>
 
-
-
-
-<!-- <hr>
-{% include education.html %}
-<hr> -->
+<!-- 其余内容保持不变 -->
 {% include researchexperience.html %}
 <hr>
 {% include publications.html %}
@@ -44,7 +38,7 @@ layout: default
 <hr>
 {% include cv.html %}
 <hr>
-<!-- 地球访问图插件 -->
-<div style="width: 300px; height: 300px; overflow: hidden; position: relative;">
+
+<div style="width:300px;height:300px;overflow:hidden;position:relative;">
   <script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=AqXitqhCGAFl2AuK0hdHF5ijO0pLUl_Qoa_E9BSAX-Q"></script>
 </div>
