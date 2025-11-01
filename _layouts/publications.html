@@ -3,38 +3,128 @@
 <head>
 <meta charset="UTF-8">
 <title>Publications</title>
-
 <style>
-/* ===== 布局 ===== */
-.publication-list{display:flex;flex-direction:column;gap:40px;padding:20px 0}
-.publication-item{display:flex;gap:20px;align-items:flex-start;border-bottom:1px solid #ddd;padding-bottom:20px}
-.publication-item img{width:260px;border-radius:8px;object-fit:contain;box-shadow:0 2px 8px rgba(0,0,0,.1)}
-.publication-info{flex:1}
-.publication-info b{font-size:1.2em}
-.publication-info em{color:#666}
-
-/* ===== 按钮 ===== */
-.pub-btn{
-  display:inline-block;margin:8px 10px 0 0;padding:6px 18px;border-radius:20px;
-  background:#2a6fdb;color:#fff;font-size:.9em;font-weight:500;text-decoration:none;
-  box-shadow:0 2px 6px rgba(0,0,0,.08);transition:all .3s ease;line-height:1.4
+/* General Layout */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  padding: 20px;
+  color: #333;
+  background: #fff;
 }
-.pub-btn:hover{background:#1e4d91;transform:scale(1.05);box-shadow:0 4px 12px rgba(0,0,0,.15)}
-.paper-btn::before{content:"📄 ";}
-.doi-btn  {background:#B2D3A4}.doi-btn::before{content:"🔗 ";}
-.video-btn{background:#F6C8A8}.video-btn::before{content:"🎬 ";}
-.bib-btn  {background:#88CEE6}.bib-btn::before{content:"📑 ";}
-
-/* ===== BibTeX 模态 ===== */
-.bib-modal{position:fixed;inset:0;display:none;align-items:center;justify-content:center;background:rgba(0,0,0,.45);z-index:9999}
-.bib-modal.active{display:flex}
-.bib-box{background:#fff;border-radius:10px;max-width:600px;width:90%;padding:20px;box-shadow:0 4px 20px rgba(0,0,0,.25);position:relative}
-.bib-box textarea{width:100%;height:200px;border:1px solid #ccc;border-radius:6px;padding:10px;font-family:monospace;font-size:.85em}
-.bib-close{position:absolute;top:10px;right:14px;font-size:1.2em;cursor:pointer;color:#999}q
-.bib-close:hover{color:#333}
-
-/* ===== 移动端 ===== */
-@media(max-width:700px){.publication-item{flex-direction:column}.publication-item img{width:100%;max-width:360px}}
+h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+.publication-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.publication-item {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  border-radius: 16px;
+  padding: 20px;
+  background: #ffffff;
+  box-shadow: 0 2px 8px rgba(0,0,0,.06);
+  transition: transform .3s ease, box-shadow .3s ease;
+}
+.publication-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 20px rgba(0,0,0,.12);
+}
+.publication-item img {
+  width: 260px;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 2px 10px rgba(0,0,0,.1);
+}
+.publication-info {
+  flex: 1;
+}
+.publication-info b {
+  font-size: 1.25em;
+}
+.publication-info em {
+  color: #666;
+  font-style: italic;
+}
+.pub-btn {
+  display: inline-block;
+  margin: 10px 12px 0 0;
+  padding: 8px 20px;
+  border-radius: 24px;
+  color: #fff;
+  font-size: .9em;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 3px 6px rgba(0,0,0,.08);
+  transition: all .3s ease;
+  background: #88CEE6;
+}
+.pub-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 14px rgba(0,0,0,.15);
+}
+.pub-btn::before {
+  margin-right: 6px;
+}
+.paper-btn::before { content: "\1F4C4"; }
+.doi-btn::before { content: "\1F517"; }
+.video-btn::before { content: "\1F3AC"; }
+.bib-btn::before { content: "\1F4D1"; }
+/* Modal Styles */
+.bib-modal {
+  position: fixed;
+  inset: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0,0,0,.5);
+  z-index: 9999;
+}
+.bib-modal.active {
+  display: flex;
+}
+.bib-box {
+  background: #fff;
+  border-radius: 12px;
+  max-width: 600px;
+  width: 90%;
+  padding: 24px;
+  box-shadow: 0 10px 40px rgba(0,0,0,.25);
+  position: relative;
+}
+.bib-box textarea {
+  width: 100%;
+  height: 220px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 12px;
+  font-family: monospace;
+  font-size: .9em;
+}
+.bib-close {
+  position: absolute;
+  top: 10px;
+  right: 14px;
+  font-size: 1.4em;
+  cursor: pointer;
+  color: #999;
+}
+.bib-close:hover {
+  color: #333;
+}
+@media(max-width:700px){
+  .publication-item {
+    flex-direction: column;
+  }
+  .publication-item img {
+    width: 100%;
+    max-width: 100%;
+  }
+}
 </style>
 </head>
 <body>
@@ -47,11 +137,11 @@
 
 
   <div class="publication-item">
-    <img src="{{ site.github.url }}/assets/img/TVCG.png" alt="TVCG(ISMAR 2025)">
+    <img src="{{ site.github.url }}/assets/img/VR2025Xuning.png" alt="TVCG(ISMAR 2025)">
     <div class="publication-info">
       <b>Exploring and Modeling the Effects of Eye-Tracking Accuracy and Precision on Gaze-Based Steering in Virtual Environments</b><br><br>
       <strong>Xuning Hu</strong>, Yichuan Zhang, Yushi Wei, Liangyuting Zhang, Yue Li, Wolfgang Stuerzlinger, Hai‑Ning Liang. <br>
-      <em>IEEE Conference on Virtual Reality and 3D User Interfaces (VR 2025)</em><br>
+      <em>IEEE Transactions on Visualization and Computer Graphics (TVCG 2025)</em><br>
 
       <!-- <a class="pub-btn paper-btn" href="{{ site.github.url }}/assets/pdfs/VR2025Xuning.pdf" target="_blank">Paper</a>
       <a class="pub-btn doi-btn"   href="https://doi.org/10.1109/VR59515.2025.00030" target="_blank">DOI</a>
@@ -100,7 +190,7 @@
     <img src="{{ site.github.url }}/assets/img/ismar.png" alt="ISMAR 2024">
     <div class="publication-info">
       <b>Exploring the Effects of Spatial Constraints and Curvature for 3D Piloting in Virtual Environments</b><br><br>
-      <strong>Xuning Hu</strong>, Xinan Yan, Yushi Wei, Wenxuan Xu, Yue Li, Wolfgang Stuerzlinger, Hai‑Ning Liang. <br>
+      <strong>Xuning Hu</strong>, Xinan Yan, Yushi Wei, Wenxuan Xu, Yue Li, Yue Liu, Hai‑Ning Liang. <br>
       <em>IEEE International Symposium on Mixed &amp; Augmented Reality (ISMAR 2024)</em><br>
 
       <a class="pub-btn paper-btn" href="{{ site.github.url }}/assets/pdfs/ISMAR2024Xuning.pdf" target="_blank">Paper</a>
