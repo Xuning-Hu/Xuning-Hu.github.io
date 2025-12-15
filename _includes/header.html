@@ -1,4 +1,4 @@
-<header class="d-flex flex-column flex-md-row align-items-center pb-3 mb-5 border-bottom">
+<header class="site-header d-flex flex-column flex-md-row align-items-center pb-3 mb-5">
   <div>
     <a href="{{ site.github.url }}/" class="d-flex align-items-center text-decoration-none">
       <span class="fs-4 fw-bold">{{ site.title }}</span>
@@ -7,9 +7,11 @@
       <span>{{ site.description }}</span>
     </a>
   </div>
-  <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
-    {% for item in site.data.settings.menu %}
-      <a class="me-3 py-2 text-decoration-none" href="{{ site.github.url }}{{ item.url }}">{{ item.name }}</a>
-    {% endfor %}
+  <nav class="site-nav d-inline-flex mt-3 mt-md-0 ms-md-auto">
+    <a class="nav-chip" href="{{ site.github.url }}/#research-experience">Research Experience</a>
+    <a class="nav-chip" href="{{ site.github.url }}/#publications">Publications</a>
+    <a class="nav-chip" href="{{ site.github.url }}/#news">News</a>
+    <a class="nav-chip" href="{{ site.github.url }}/#cv">CV</a>
+    <a class="nav-chip" href="{{ site.github.url }}/#photo-wall">Photo Wall</a>
   </nav>
 </header>

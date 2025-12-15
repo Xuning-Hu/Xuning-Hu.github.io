@@ -21,3 +21,44 @@ courses:
 
 contacts:
 - {name: 'Dr. Academia', title: 'Professor', department: 'Physics & Astronomy', institution: 'Some University', institution_address: '1 Main Street, Canada', phone: '(000) 000-0000', email: 'hello@university.edu', office: 'Science Building 505', image: 'assets/img/contact.jpg'}
+
+photo_wall:
+  - src: "assets/img/铁塔.jpg"
+    caption: "Eiffel Tower moment"
+    meta: "Travel memory"
+
+  - src: "assets/img/情侣.jpg"
+    caption: "Lovely Girlfriend"
+    meta: "Life moment"
+
+  - src: "assets/img/情侣2.jpg"
+    caption: "At home together"
+    meta: "Life moment"
+
+  - src: "assets/img/中科院.jpg"
+    caption: "At Chinese Academy of Sciences"
+    meta: "Research visit"
+
+  - src: "assets/img/和xwx.jpg"
+    caption: "With collaborators"
+    meta: "Daily life"
+
+  - src: "assets/img/和Wolfgang以及xwx.jpg"
+    caption: "With Prof. Wolfgang Stuerzlinger"
+    meta: "Research collaboration"
+
+  - src: "assets/img/高中足球.jpg"
+    caption: "High school football"
+    meta: "Youth memory"
+
+  - src: "assets/img/千禧猫猫.jpg"
+    caption: "千禧"
+    meta: "Daily life"
+
+  - src: "assets/img/CHI开会.jpg"
+    caption: "At CHI Conference"
+    meta: "CHI"
+
+  - src: "assets/img/ISMAR开会.jpg"
+    caption: "At ISMAR Conference"
+    meta: "ISMAR"

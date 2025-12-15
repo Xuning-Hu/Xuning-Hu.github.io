@@ -1,0 +1,22 @@
+<h2>Photo Wall</h2>
+
+{% assign photos = site.data.settings.photo_wall %}
+<div class="photo-grid">
+  {% if photos and photos.size > 0 %}
+    {% for photo in photos %}
+      <figure class="photo-card">
+        <div class="photo-frame">
+          <img src="{{ site.github.url }}/{{ photo.src }}" alt="{{ photo.caption | escape }}">
+        </div>
+        <figcaption>
+          <div class="photo-caption">{{ photo.caption }}</div>
+          {% if photo.meta %}
+            <div class="photo-meta">{{ photo.meta }}</div>
+          {% endif %}
+        </figcaption>
+      </figure>
+    {% endfor %}
+  {% else %}
+    <p class="text-muted">在 <code>_data/settings.yml</code> 的 <code>photo_wall</code> 中添加图片条目即可展示照片。</p>
+  {% endif %}
+</div>

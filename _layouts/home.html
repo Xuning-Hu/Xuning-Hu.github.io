@@ -3,13 +3,13 @@ layout: default
 ---
 
 <div class="row g-3 mb-5">
-  <!-- 左侧：Biography –– col-md-8 / col-lg-9 -->
+  <!-- Left: Biography -->
   <div class="col-md-8 col-lg-9">
     <h3 class="fw-bold">Biography</h3>
     {{ content }}
   </div>
 
-  <!-- 右侧：头像 + 联系方式 –– col-md-4 / col-lg-3 -->
+  <!-- Right: Photo + Contacts -->
   <div class="col-md-4 col-lg-3">
     <div class="text-center">
       <img src="{{ site.github.url }}/assets/img/index.jpg"
@@ -29,14 +29,26 @@ layout: default
   </div>
 </div>
 
-<!-- 其余内容保持不变 -->
-{% include researchexperience.html %}
+<!-- Content sections -->
+<section id="research-experience">
+  {% include researchexperience.html %}
+</section>
 <hr>
-{% include publications.html %}
+<section id="publications">
+  {% include publications.html %}
+</section>
 <hr>
-{% include news.html %}
+<section id="news">
+  {% include news.html %}
+</section>
 <hr>
-{% include cv.html %}
+<section id="cv">
+  {% include cv.html %}
+</section>
+<hr>
+<section id="photo-wall">
+  {% include photowall.html %}
+</section>
 <hr>
 
 <div style="width:300px;height:300px;overflow:hidden;position:relative;">
