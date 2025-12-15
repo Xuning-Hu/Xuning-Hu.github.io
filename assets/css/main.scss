@@ -155,6 +155,8 @@ hr {
 
 .site-nav {
   gap: 10px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
 }
 
 .nav-chip {
@@ -177,4 +179,28 @@ hr {
   color: #0b1224;
   text-decoration: none;
   box-shadow: 0 10px 24px rgba(15, 23, 42, 0.14);
+}
+
+@media (max-width: 768px) {
+  .site-header {
+    align-items: flex-start;
+  }
+
+  .site-nav {
+    width: 100%;
+    justify-content: flex-start;
+    gap: 8px;
+  }
+
+  .nav-chip {
+    flex: 1 1 calc(50% - 8px);
+    justify-content: center;
+    padding: 9px 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-chip {
+    flex-basis: 100%;
+  }
 }
